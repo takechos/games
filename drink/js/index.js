@@ -8,11 +8,11 @@ var spotList = [];
 
 // 行きたい場所を配列にぶち込む
 spotList = [
-    '<span>たける<br>飲んでなくない？</span>',
-    '<span>かすみ<br>飲んでなくない？</span>',
-    '<span>しゅーま<br>飲んでなくない？</span>',
-    '<span>ゆうな<br>飲んでなくない？</span>',
-    '<span>全員<br>飲んでなくない？</span>'
+    '<span>たける</span><br>飲んでなくない？',
+    '<span>かすみ</span><br>飲んでなくない？',
+    '<span>しゅーま</span><br>飲んでなくない？',
+    '<span>ゆうな</span><br>飲んでなくない？',
+    '<span>全員</span><br>飲んでなくない？'
                 ];
 
 // スタートボタンを押したときの処理
