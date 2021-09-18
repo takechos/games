@@ -9,7 +9,7 @@ var spotList = [];
 // 行きたい場所を配列にぶち込む
 spotList = [
     '<span>たける</span><br>たけるが出ました。飲んでください。',
-    '<span>かすみ</span><br>かすみが出ました。飲んでください。',
+    '<span>かすみ</span>',
     '<span>りよこ</span>',
     '<span>中村ゆうき</span>',
     '<span>かずさ</span>',
@@ -26,7 +26,7 @@ spotList = [
     '<span>ミルク</span>',
     '<span>杉野</span>',
     '<span>JOJO</span>',
-    '<span>しゅーま</span><br>しゅーまが出ました。飲んでください。',
+    '<span>しゅーま</span>',
     '<span>古幡ゆうこ</span>',
     '<span>まつたくん</span>',
     '<span>なんもゆか</span>',
@@ -57,7 +57,7 @@ spotList = [
     '<span>たくや</span>',
     '<span>末廣ゆうき</span>',
     '<span>たすく</span>',
-    '<span>ゆうな<br></span>ゆうなが出ました。飲んでください。',
+    '<span>ゆうな<br>',
     '<span>りの</span>',
     '<span>のがわ</span>',
     '<span>ひるかわ</span>',
