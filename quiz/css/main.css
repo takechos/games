@@ -5,7 +5,7 @@
 	margin: 40px 3%;
 }
 .cp_iptxt input[type='text'] {
-	font: 26px/24px sans-serif;
+	font: 16px sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.3em;
@@ -46,7 +46,8 @@ ul, ol {
     border-top:2px solid #9B25E6;
     border-bottom: 2px solid #EC5289;
     border-image:linear-gradient(to right, #FF96D7, #F9ED13);
-    border-image-slice:1;    
+    border-image-slice:1;   
+    border: 2px 0 2px 0;
   }
 
   /*Fix answer area*/
