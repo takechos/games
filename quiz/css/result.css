@@ -1,0 +1,55 @@
+/*title*/
+#gameTitle {
+    position: relative;
+    /*color: #158b2b;*/
+    color: #FF279F;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    margin: 1.5em 0;
+  }
+#gameTitle:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 150px;
+    height: 96px;
+    border-radius: 50%;
+    /*border: 5px solid #a6ddb0;*/
+    border: 5px solid #FF96D7;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*description*/
+#description{
+    font-size: 36px;
+}
+
+#descriptionSub{
+    font-size: 24px;
+}
+
+
+/*link*/
+#tweet{
+    font-size: 15px;
+}
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}

@@ -1,0 +1,92 @@
+/*input form*/
+.cp_iptxt {
+	position: relative;
+	width: 93%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 26px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: black;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+
+    text-align: center;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
+
+/*bullet point*/
+ul, ol {
+    color: black;
+    border-top: solid #1e366a 1px;/*上のボーダー*/
+    border-bottom: solid #1e366a 1px;/*下のボーダー*/
+    padding: 0.5em 0 0.5em 1.5em;
+}
+  
+  ul li, ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+
+    text-align: left;
+    font-size: smaller;
+}
+
+  /*Fix question area*/
+  #output_space{
+    height: 580px;
+    overflow: scroll;
+    border-top:2px solid #9B25E6;
+    border-bottom: 2px solid #EC5289;
+    border-image:linear-gradient(to right, #FF96D7, #F9ED13);
+    border-image-slice:1;    
+  }
+
+  /*Fix answer area*/
+  .p-quiz-answer{
+    font-size: 36px;
+    height: 785px;
+  }
+
+  /*font question area*/
+  .p-quiz-contents{
+    font-size: 24px;
+  }
+
+
+  /*result*/
+  #correctA{
+    font-size: 60px;
+    color: magenta;
+  }
+
+  #incorrectA{
+    font-size: 60px;
+    color: darkblue;
+  }
+
+
+  /*title*/
+#questionTitle{
+  font-size: 36px;
+}
+
+#questionTitleSub{
+  font-size: 24px;
+}
+
+#currentQNo{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#allQNo{
+  font-size: 24px;
+}

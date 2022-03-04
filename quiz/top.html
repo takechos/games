@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>    　
+    <meta charset="UTF-8">
+    　<title>Quiz</title>
+    　
+    <link rel="stylesheet" type="text/css" href="./css/basic.css">
+    <link rel="stylesheet" type="text/css" href="./css/top.css">
+</head>
+
+<body>
+    <div class="p-quiz">
+        <h1 id="gameTitle">曲当てクイズ</h1>
+        <div class="p-quiz-body">
+            <p id="description">　問題数を選択してください。</p>
+            <p id="descriptionSub"></pid>問題数が多いほど高得点のチャンス！</p>
+            <br>
+            <form id="numRadio" name="param" action="#">
+                <input id="item-1" class="radio-inline__input" type="radio" name="num" value="3"/>
+                <label class="radio-inline__label" for="item-1">
+                    　　3問　　
+                </label>
+                <input id="item-2" class="radio-inline__input" type="radio" name="num" value="5" checked="checked"/>
+                <label class="radio-inline__label" for="item-2">
+                    　　5問　　
+                </label>
+                <input id="item-3" class="radio-inline__input" type="radio" name="num" value="7"/>
+                <label class="radio-inline__label" for="item-3">
+                    　　7問　　
+                </label>
+                <input id="item-4" class="radio-inline__input" type="radio" name="num" value="10"/>
+                <label class="radio-inline__label" for="item-4">
+                    　　10問　　
+                </label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="button" value="START" onClick="transition()" class="c-btn">
+            </form>
+        </div>
+    </div>
+
+    <script src = "./js/top.js"></script>
+</body>
+
+</html>

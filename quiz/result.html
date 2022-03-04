@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./css/basic.css">
+  <link rel="stylesheet" type="text/css" href="./css/result.css"> </head>
+<body>
+  <div class="p-quiz">
+    <div id="gameTitle">RESULT</div>
+    <div id="result">
+      <div id="descriptionSub">遊んでくれてありがとう！
+        <div></div>
+        <div id="description">%s1問中<strong>%s2問</strong>正解しました！<br>モノノフ偏差値<strong>%s3</strong>です。</div>
+        <br>
+      </div> <input type="button" value="トップに戻る" onClick="toTop()" class="c-btn"> </div>
+      <br><br><br>
+    <div id="tweet">
+      <p>＼結果をシェアしてみんなでPLAY！／</p> <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-hashtags="ももクロ曲当て" data-text="#ももクロ曲当てクイズ %s1問中%s2問正解、モノノフ偏差値%s3でした！みんなはどう？" data-size="large" data-url="https://takechos.github.io/games/quiz/top.html">Tweet</a>
+
+      <p>＼伝えたい言葉（ご意見・ご要望）がある方はこちら／</p> <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-hashtags="ももクロ曲当て" data-text="@Zeeeee_t【ご意見・ご要望】" data-size="large" data-url="https://takechos.github.io/games/quiz/top.html">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+  <script src="./js/result.js"></script>
+</body>
+</html>
