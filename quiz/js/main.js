@@ -143,8 +143,11 @@ function makeQuestion() {
   ins += '<div class = "cp_iptxt">'
   ins += '<form name = "answer" class="ef">'
   ins += '<input type = "text" name = "input" placeholder="曲名を入力">'
+  ins += '<br><br>'
   ins += '<input type = "button" value = "回答" onclick = "judge()" class = "c-btn">'
+  ins += '<br><br><br>'
   ins += '<input id = "passBtn" type = "button" value = "パス（残り' + (passLimit-passCount) + '回）" onclick = "pass()" class = "c-btn">'
+  ins += '<br><br>'
   ins += '</div>'
 
   ins += '<div class = "p-quiz-choices">'
