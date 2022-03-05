@@ -43,6 +43,8 @@ function replaceText() {
 
     var str = document.getElementById("result").innerHTML;
 
+    let roundSec = (Math.round(sec * 10))/10
+    str = str.replace("%s0", roundSec);
     str = str.replace("%s1", num);
     str = str.replace("%s2", point);
     str = str.replace("%s3", dev);
