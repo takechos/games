@@ -90,7 +90,7 @@ function getNum() {
   num = params.get('num')
 
   //set passLimit
-  passLimit = Math.ceil( num/2 );
+  passLimit = Math.ceil( num/5 );
 }
 
 function setQuestions() {
