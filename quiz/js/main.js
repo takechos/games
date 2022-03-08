@@ -204,11 +204,11 @@ function formatChar(str){
 
   //Replace　ひらがな→カタカナ、全角→半角（ローマ字）、大文字→小文字、φ→O
   str = str.replace(/[ぁ-ん]/g, function(s) {
-      return String.fromCharCode(s.charCodeAt(0) + 0x60);
+    return String.fromCharCode(s.charCodeAt(0) + 0x60);
   });
 
   str = str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
-      return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+    return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
   });
 
   str = str.toLowerCase();
