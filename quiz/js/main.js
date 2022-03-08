@@ -197,33 +197,24 @@ function judge() {
 
 function formatChar(str){
   //Delete 全角半角空白、「-」、「'」、「 -ZZ ver.-」、「、」、「・」「「」」、「.」、「…」、「☆」、「:」、「!?！？」
-  var delTarget = [' -ZZ ver.-',' ','　','-','\'',',','.','、','。','･','・','「','」','…','☆',':','：','!','?','！','？','"','[',']','〜','ー'];
-  for (const element of delTarget) {
-    if(str == null || str == ''){
-      break;
-    }
-    if (str.indexOf(element) != -1) {
-      //strにelementを含む場合の処理
-      str = str.split(element).join('');
-    }
+  var delTargets = [' -ZZ ver.-',' ','　','-','\'',',','.','、','。','･','・','「','」','…','☆',':','：','!','?','！','？','"','[',']','〜','ー'];
+  for (const delTarget of delTargets) {
+    str = str.replaceAll(delTarget, '');
   }
 
-  if(str != null || str != ''){
-    //Replace　ひらがな→カタカナ、全角→半角（ローマ字）、大文字→小文字、φ→O
+  //Replace　ひらがな→カタカナ、全角→半角（ローマ字）、大文字→小文字、φ→O
+  str = str.replace(/[ぁ-ん]/g, function(s) {
+    return String.fromCharCode(s.charCodeAt(0) + 0x60);
+  });
 
-    str = str.replace(/[ぁ-ん]/g, function(s) {
-      return String.fromCharCode(s.charCodeAt(0) + 0x60);
-    });
+  str = str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+    return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+  });
 
-    str = str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
-      return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
-    });
+  str = str.toLowerCase();
 
-    str = str.toLowerCase();
+  str = str.replaceAll('φ', 'O');
 
-    str = str.split('φ').join('O');
-  }
-  
   return str;
 }
 
