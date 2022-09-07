@@ -76,3 +76,18 @@ form {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+ul, ol {
+    color: black;
+    border-top: solid #1e366a 1px;/*上のボーダー*/
+    border-bottom: solid #1e366a 1px;/*下のボーダー*/
+    padding: 0.5em 0 0.5em 1.5em;
+}
+  
+  ul li, ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+
+    text-align: left;
+    font-size: smaller;
+}

@@ -153,10 +153,10 @@ function makeQuestion() {
   ins += '<div class = "p-quiz-choices">'
   ins += '<div class = "p-quiz-choices__item">'
   ins += '<ul>'
-  ins += '<li>正式名称、または全部ひらがな（もしくはカタカナ）で記入ください。</li>'
+  ins += '<li>回答は、正式名称、または全部ひらがな（もしくはカタカナ）で記入ください。</li>'
   ins += '<li>省略語も指定できます。例：猛烈、PJ、コントラ、など</li>'
   ins += '<li>大/小文字、全/半角、ひらがな/カタカナ、は区別する必要ありません。</li>'
-  ins += '<li>「-ZZ ver.-」の記載はあってもなくても大丈夫です。空白や記号（「-」「・」など）も同様です。</li>'
+  ins += '<li>「-ZZ ver.-」の記載はあってもなくても大丈夫です。空白や記号（「-」「・」「☆」など）も同様です。</li>'
   ins += '</ul>'
   ins += '</div>'
   ins += '</div>'
@@ -245,6 +245,16 @@ function makeAnswer(boolean) {
   }
 
   ins += '<p class="p-quiz-answer">答え：' + quizData[currentQuizNo]['title'] + '</p>';
+  ins += '<p style="font-weight:bold;font-size:150%;">▼回答例▼<br>';
+  let cnt = 1;
+  for(str of quizData[currentQuizNo]['a']){
+    if(cnt != 1){
+      ins += ', ';
+    }
+    ins += str;
+    cnt++;
+  }
+  ins += '</p>';
 
   // 未回答の問題がある場合
   if (currentQuizNo - passCount + 1 < num) {
