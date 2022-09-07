@@ -17,6 +17,7 @@ form {
       margin-right: 18px;
       border-radius: 3px;
       transition: all .2s;
+      font-weight: bold;
   }
   
   .radio-inline__input:checked + .radio-inline__label {
