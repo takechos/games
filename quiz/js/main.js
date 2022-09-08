@@ -196,13 +196,13 @@ function judge() {
 }
 
 function formatChar(str){
-  //Delete 全角半角空白、「-」、「'」、「 -ZZ ver.-」、「、」、「・」「「」」、「.」、「…」、「☆」、「:」、「!?！？」
-  var delTargets = [' -ZZ ver.-',' ','　','-','\'',',','.','、','。','･','・','「','」','…','☆',':','：','!','?','！','？','"','[',']','〜','ー'];
+  //Delete 全角半角空白、「-」、「'」、「 -ZZ ver.-」、「、」、「・」「「」」、「.」、「…」、「☆」、「♡」、「:」、「!?！？」
+  var delTargets = [' -ZZ ver.-',' ','　','-','\'',',','.','、','。','･','・','「','」','…','☆','♡',':','：','!','?','！','？','"','[',']','〜','ー'];
   for (const delTarget of delTargets) {
     str = str.replaceAll(delTarget, '');
   }
 
-  //Replace　ひらがな→カタカナ、全角→半角（ローマ字）、大文字→小文字、φ→O
+  //Replace　ひらがな→カタカナ、全角→半角（ローマ字）、大文字→小文字、Ø→O
   str = str.replace(/[ぁ-ん]/g, function(s) {
     return String.fromCharCode(s.charCodeAt(0) + 0x60);
   });
@@ -213,6 +213,8 @@ function formatChar(str){
 
   str = str.toLowerCase();
 
+  str = str.replaceAll('Ø', 'O');
+  str = str.replaceAll('ø', 'O');
   str = str.replaceAll('φ', 'O');
 
   return str;
