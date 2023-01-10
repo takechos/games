@@ -31,6 +31,8 @@ function calc(){
     }else if(perPoint <= 7){
         dev = dev + Number(Math.ceil(perPoint/2)) - (sec/40);
         dev = (Math.round(dev * 100))/100
+    }else if(num == 10 && point == 10 && sec <= 80){
+        dev = 517.0;
     }else{
         let bonus = ((num * num) + Number(point * point))/10;
         dev = dev + Number(bonus) + Number(perPoint) - (sec/100);
@@ -52,6 +54,7 @@ function replaceText() {
     document.getElementById("result").innerHTML = str;
 
     var tweet = document.getElementById("tweet").innerHTML;
+    tweet = tweet.replace("%s0", roundSec);
     tweet = tweet.replace("%s1", num);
     tweet = tweet.replace("%s2", point);
     tweet = tweet.replace("%s3", dev);
