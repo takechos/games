@@ -32,7 +32,7 @@ function calc(){
         dev = dev + Number(Math.ceil(perPoint/2)) - (sec/40);
         dev = (Math.round(dev * 100))/100
     }else if(num == 10 && point == 10 && sec <= 80){
-        dev = 517.0;
+        dev = 20080517.0;
     }else{
         let bonus = ((num * num) + Number(point * point))/10;
         dev = dev + Number(bonus) + Number(perPoint) - (sec/100);
