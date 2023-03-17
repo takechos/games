@@ -2,7 +2,7 @@ function transition() {
     var element = document.getElementById('elemlist').value;
     const elements = element.split(/\r\n|\n/);
     let len = elements.length;
-    if(len < 1){
+    if(len <= 1){
         location.href = 'dice.html?transition=false'
     }
 
@@ -10,9 +10,9 @@ function transition() {
     
     for (let i = 0; i < len; i++) {
         if(i==0){
-            urltail = urltail + 'arg' + i + '=' + elements[i];
+            urltail = urltail + 'arg' + i + '=' + encodeURIComponent(elements[i]);
         }else{
-            urltail = urltail + '&arg' + i + '=' + elements[i];
+            urltail = urltail + '&arg' + i + '=' + encodeURIComponent(elements[i]);
         }
     }
 
