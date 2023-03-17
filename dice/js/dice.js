@@ -6,15 +6,21 @@ function transition() {
         location.href = 'dice.html?transition=false'
     }
 
-    var urltail='len=' + len;
+    var urltail = '?';
     
     for (let i = 0; i < len; i++) {
-        console.log('&arg' + i + '=' + elements[i]);
-        urltail = urltail + '&arg' + i + '=' + elements[i];
+        if(i==0){
+            urltail = urltail + 'arg' + i + '=' + elements[i];
+        }else{
+            urltail = urltail + '&arg' + i + '=' + elements[i];
+        }
     }
 
-    console.log('main.html?' +  encodeURIComponent(urltail));
-    location.href = 'main.html?' +  encodeURIComponent(urltail);
+    //console.log('main.html?' +  encodeURIComponent(urltail));
+    //location.href = 'main.html?' +  encodeURIComponent(urltail);
+    var urlIncludeParam = 'main.html' +  urltail;
+    console.log(urlIncludeParam);
+    location.href = urlIncludeParam;
 }
 
 function reset() {

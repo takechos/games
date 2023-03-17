@@ -1,3 +1,4 @@
+/*
 getNum()
 function getNum() {
     // URLを取得
@@ -23,7 +24,7 @@ function url_query_param() {
     });
     return param;
 }
-
+*/
 
 
 // 変数宣言
@@ -34,14 +35,19 @@ var place = '';
 var intervalID = -1;
 var spotList = [];
 
-// 行きたい場所を配列にぶち込む
-spotList = [
-    '<span>A</span><br>飲んでなくない？',
-    '<span>B</span><br>飲んでなくない？',
-    '<span>C</span><br>飲んでなくない？',
-    '<span>D</span><br>飲んでなくない？',
-    '<span>全員</span><br>飲んでなくない？'
-                ];
+// URLパラメータを"&"で分離する
+var url_search = location.search.substr(1).split('&');
+ // パラメータ連想配列エリア初期化
+var spotList = [];
+// キーエリア初期化（今回はValueだけしか使わないが）
+var key = null;
+for(var i = 0 ; i < url_search.length ; i++)
+{
+	// "&"で分離したパラメータを"="で再分離
+	key = url_search[i].split("=");
+	// パラメータをPUSH
+    spotList.push(key[1]);
+}
 
 // スタートボタンを押したときの処理
 function clickedStart() {
