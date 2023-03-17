@@ -9,8 +9,9 @@ var spotList = [];
 // 行きたい場所を配列にぶち込む
 spotList = [
     '<span>たける</span><br>飲んでなくない？',
-    '<span>かすみ</span><br>飲んでなくない？',
+    '<span>れん</span><br>飲んでなくない？',
     '<span>しゅーま</span><br>飲んでなくない？',
+    '<span>なおちゃん</span><br>飲んでなくない？',
     '<span>ゆうな</span><br>飲んでなくない？',
     '<span>全員</span><br>飲んでなくない？'
                 ];
