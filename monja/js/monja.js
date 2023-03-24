@@ -24,7 +24,8 @@ const imageNames = [
     "image22.png",
     "image23.png",
     "image24.png",
-    "image25.png"
+    "image25.png",
+    "image26.png"
   ];
   
   const imageArea = document.getElementById("image-area");
