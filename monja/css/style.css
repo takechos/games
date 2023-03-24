@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1,h2 {
+    text-align: center;
+  }
+  
+  #image-area {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #image-list {
+    margin-top: 40px;
+  }
+  
+  #image-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #image-list li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  #image-list img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 画像表示エリア */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#image-area {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  #image-area img {
+    max-height: 100%;
+    max-width: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+  }
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* ボタン */
+  #bottons {
+    text-align: center;text-align: center;
+  }
+  button {
+    background-color: #f44336;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px #d74d3e;
+  }
+  button:hover {
+    background-color: #d74d3e;
+    box-shadow: 0 2px #d74d3e;
+  }
+  
+  /* 既に表示した画像一覧 */
+  #image-list {
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #image-list li {
+    margin: 10px;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+  }
+  /*
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}*/
