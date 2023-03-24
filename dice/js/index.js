@@ -46,7 +46,7 @@ for(var i = 0 ; i < url_search.length ; i++)
 	// "&"で分離したパラメータを"="で再分離
 	key = url_search[i].split("=");
 	// パラメータをPUSH
-    spotList.push(key[1]);
+    spotList.push(decodeURIComponent(key[1]));
 }
 
 // スタートボタンを押したときの処理
