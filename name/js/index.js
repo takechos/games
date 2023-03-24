@@ -75,6 +75,7 @@ spotList = [
     '<span>りょうこ</span>',
     '<span>ながディ</span>',
     '<span>スワン</span>',
+    '<span>れん</span>',
     '<span>全員で乾杯</span>',
     '<span>あなたは1杯</span>',
     '<span>あなたは2杯</span>',
