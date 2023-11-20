@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>確率五目並べ</title>
+</head>
+<body>
+
+<div id="controls">
+  <button id="undoButton" onclick="undoMove()">やり直す</button>
+  <button id="resetButton" onclick="resetBoard()">リセット</button>
+</div>
+
+<div id="board"></div>
+
+<div id="additionalControls">
+  <div id="colorSwitchButtons">
+    <button id="switchButton" onclick="switchTurn()">色交代</button>
+    <div id="currentColor"></div>
+  </div>
+  <button id="observeButton" onclick="observe()">バトル</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
